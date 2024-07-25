@@ -1,0 +1,204 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    top: 0;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    background-color: #8a4900;
+}
+
+.header-img {
+    height: 92%;
+}
+
+.nav-bar {
+    width: 90%;
+    height: 100%;
+}
+
+.nav-bar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    list-style-type: none;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar li {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    align-content: center;
+    font-size: 18px;
+}
+
+.nav-bar a {
+    margin: 0;
+    padding: 0;
+    color: black;
+    text-decoration: none;
+    height: 100%;
+    padding: 0 50px;
+}
+
+.nav-bar a:hover {
+    background-color: #774000;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+form label, form input {
+    margin: 10px;
+}
+
+.contacto {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.email {
+    font-size: 18px;
+    padding: 5px;
+}
+
+.submit {
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    color: black;
+    padding: 6px 33px;
+    background-color: sienna;
+}
+
+.first {
+    margin-top: 120px;
+}
+
+.first h1 {
+    font-size: 50px;
+}
+
+section{
+    margin: 0 100px;
+    text-align: center;
+    scroll-margin-top: 100px;
+}
+
+.productos p {
+    font-size: 18px;
+    margin: 0 auto;
+    padding: auto;
+}
+
+.pricing {
+    margin: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pricing .product {
+    border: 1px solid transparent;
+    width: 300px;
+    margin: 20px;
+}
+
+.pricing .product:hover {
+    box-shadow: 0px 0px 15px 5px #774000 ;
+}
+
+
+.pricing ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pricing li {
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    padding: 15px;
+    border: 1px solid gray;
+}
+
+.pricing .packName {
+    background-color: rgb(59, 41, 6);
+    color: white;
+}
+
+.pricing .grey {
+    background-color: #cfcfcf;
+}
+
+.pricing .button {
+    text-decoration: none;
+    color: black;
+    background-color: rgb(173, 86, 4);
+    padding: 8px 20px;
+    border-radius: 8%;
+}
+
+.pricing .button:hover {
+    background-color: rgb(196, 98, 6);
+    padding: 9px 21px;
+}
+
+h2 {
+    text-align: center;
+}
+
+@media only screen and (max-width:600px) {
+    header {
+        flex-direction: column;
+        height: 300px;
+    }
+
+    .nav-bar ul {
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    
+    }
+
+    .header-img {
+        height: 80px;
+    }
+
+    .first {
+        margin-top: 300px;
+    }
+
+    section {
+        scroll-margin-top: 300px;
+        text-align: justify;
+    }
+    
+}
